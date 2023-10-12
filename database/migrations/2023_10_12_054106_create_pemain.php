@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('pemain', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_pemain');
+            $table->integer('no_punggung');
+            $table->string('posisi');
             $table->timestamps();
         });
     }
